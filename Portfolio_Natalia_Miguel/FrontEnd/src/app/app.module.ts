@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BotonIniciarSesionComponent } from './components/boton-iniciar-sesion/boton-iniciar-sesion.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BotonIniciarSesionComponent } from './components/boton-iniciar-sesion/b
     FooterComponent,
     LogoAPComponent,
     MenuComponent,
-    BotonIniciarSesionComponent
+    BotonIniciarSesionComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
