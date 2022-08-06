@@ -10,6 +10,9 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { BotonIniciarSesionComponent } from './components/boton-iniciar-sesion/boton-iniciar-sesion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienciaComponent,
     ProyectosComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    LogoAPComponent,
+    MenuComponent,
+    BotonIniciarSesionComponent
   ],
   imports: [
     BrowserModule,

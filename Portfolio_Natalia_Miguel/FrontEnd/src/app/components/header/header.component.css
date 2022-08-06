@@ -1,0 +1,6 @@
+div{
+    background-color:#3c1b53;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
