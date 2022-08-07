@@ -14,6 +14,7 @@ import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BotonIniciarSesionComponent } from './components/boton-iniciar-sesion/boton-iniciar-sesion.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BannerComponent } from './components/banner/banner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
