@@ -12,11 +12,12 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { BotonIniciarSesionComponent } from './components/boton-iniciar-sesion/boton-iniciar-sesion.component';
+import { BotonIniciarSesionComponent } from './components/boton-ingresar-sesion/boton-iniciar-sesion.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormularioLoginComponent } from './components/formulario-login/formulario-login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoginComponent } from './components/login/login.component';
     BotonIniciarSesionComponent,
     BannerComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    FormularioLoginComponent
   ],
   imports: [
     BrowserModule,
