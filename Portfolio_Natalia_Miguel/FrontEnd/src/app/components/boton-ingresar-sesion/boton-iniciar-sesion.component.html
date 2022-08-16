@@ -1,7 +1,14 @@
-<div class="container">
+<div type="button" class="container" (click)="login()" *ngIf="!isLogged">
     <a href="/login">
         <span>
             Ingresar
+        </span>
+    </a>
+</div>
+<div type="button" class="container" (click)="onLogOut()" *ngIf="isLogged">
+    <a href="/login">
+        <span>
+            Cerrar sesión
         </span>
     </a>
 </div>
