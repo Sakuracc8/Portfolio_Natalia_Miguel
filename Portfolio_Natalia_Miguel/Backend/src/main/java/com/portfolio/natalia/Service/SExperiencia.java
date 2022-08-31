@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.natalia.Service;
 
 import com.portfolio.natalia.Entity.Experiencia;
@@ -44,7 +39,6 @@ public class SExperiencia {
     }
     
     public boolean existsByNombreE(String nombreE){
-        return rExperiencia.existsByNombreE(nombreE);
-                
+        return rExperiencia.existsByNombreE(nombreE);          
     }
 }

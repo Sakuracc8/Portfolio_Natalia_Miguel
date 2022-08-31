@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.natalia.Dto;
 
 import javax.validation.constraints.NotBlank;
@@ -12,6 +7,8 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    
+    //Constructor
 
     public dtoEducacion() {
     }
@@ -21,6 +18,8 @@ public class dtoEducacion {
         this.descripcionE = descripcionE;
     }
 
+    //Getters y Setters
+    
     public String getNombreE() {
         return nombreE;
     }

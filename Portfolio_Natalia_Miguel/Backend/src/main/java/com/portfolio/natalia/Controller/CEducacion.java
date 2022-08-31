@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.natalia.Controller;
 
 import com.portfolio.natalia.Dto.dtoEducacion;
@@ -39,9 +34,7 @@ public class CEducacion {
     @GetMapping("/detail/{id}")
     public ResponseEntity<Educacion> getById(@PathVariable("id")int id){
         if(!sEducacion.existsById(id)){
-            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
-        }
-        
+            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);}
         Educacion educacion = sEducacion.getOne(id).get();
         return new ResponseEntity(educacion, HttpStatus.OK);
     }
@@ -61,15 +54,10 @@ public class CEducacion {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
         if(sEducacion.existsByNombreE(dtoeducacion.getNombreE())){
-            return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
-        
-        Educacion educacion = new Educacion(
-                dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
-            );
+            return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);}
+        Educacion educacion = new Educacion(dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE());
         sEducacion.save(educacion);
-        return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
-                
+        return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);       
     }
     
     @PutMapping("/update/{id}")
@@ -90,7 +78,7 @@ public class CEducacion {
         educacion.setDescripcionE(dtoeducacion.getDescripcionE());
         
         sEducacion.save(educacion);
-        
+      
         return new ResponseEntity(new Mensaje("Educacion actualizada"), HttpStatus.OK);
     }
 }

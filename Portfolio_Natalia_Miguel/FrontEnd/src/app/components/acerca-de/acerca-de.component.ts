@@ -1,4 +1,3 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/service/persona.service';
@@ -10,7 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AcercaDeComponent implements OnInit {
   persona: persona = new persona("","","");
-
+  
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
