@@ -1,13 +1,33 @@
-.row{
-    padding:20px;
-    padding-right:0;
-    margin-right:0;
-}
 
 div{
     background-color:rgb(219, 204, 230);
+    margin: 0;
 }
 
-h2, h6{
-    display:inline;
+i{
+    margin:2px;
+}
+
+.principal{
+    padding: 20px;
+    display: block;
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width: 767px){
+    .botones{
+        display: flex;
+        justify-content: flex-start;
+    }
 }

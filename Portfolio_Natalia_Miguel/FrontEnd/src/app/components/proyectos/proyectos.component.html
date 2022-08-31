@@ -11,7 +11,7 @@
                 </div>
                 <figcaption>
                     <h3>{{Proyectos.nombreE}}</h3>
-                    <div class="icons" *ngIf="isLogged"><i class="bi bi-pencil"></i><i class="bi bi-trash3-fill" (click)="delete(Proyectos.id)"></i></div>
+                    <div class="icons" *ngIf="isLogged"><i class="bi bi-pencil" routerLink="/editproyectos/{{Proyectos.id}}"></i><i class="bi bi-trash3-fill" (click)="delete(Proyectos.id)"></i></div>
                 </figcaption>
             </figure>
         </tr>
