@@ -1,13 +1,93 @@
-.row{
-    padding:20px;
-    padding-right:0;
-    margin-right:0;
-}
-
 div{
     background-color:rgb(243, 236, 250);
+    margin: 0;
 }
 
-h2, h6{
-    display:inline;
+i{
+    margin:2px;
 }
+
+.principal{
+    padding: 20px;
+    display: block;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-bottom: 8x;
+    margin-bottom: 2px;
+
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+}
+@media(max-width: 767px){
+    .botones{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+ /* Botón editar */
+
+.editar{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 00;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .editar:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .editar:active{
+    transform: translateY(-1px);
+  }
+
+  /* Botón borrar */
+
+.borrar{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 00;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .borrar:hover {
+    background-color: #c42323;
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .borrar:active{
+    transform: translateY(-1px);
+  }
