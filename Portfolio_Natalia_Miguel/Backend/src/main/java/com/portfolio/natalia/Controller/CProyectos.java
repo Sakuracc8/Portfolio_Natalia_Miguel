@@ -36,8 +36,8 @@ public class CProyectos {
     public ResponseEntity<Proyectos> getById(@PathVariable("id")int id){
         if(!sProyectos.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);}
-        Proyectos educacion = sProyectos.getOne(id).get();
-        return new ResponseEntity(educacion, HttpStatus.OK);
+        Proyectos proyectos = sProyectos.getOne(id).get();
+        return new ResponseEntity(proyectos, HttpStatus.OK);
     }
     
     @PostMapping("/create")
