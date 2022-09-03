@@ -16,6 +16,7 @@ figure.snip1218 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     font-size: 16px;
     box-shadow: 5px 5px 25px rgb(91, 9, 146);
+    border-radius: 2%;
 }
 
 figure.snip1218 * {
