@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/service/persona.service';
+import { AcercaDeM } from 'src/app/model/acerca-de-m';
+import { AcercaDeService } from 'src/app/service/acerca-de.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -8,12 +9,33 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  persona: persona = new persona("","","");
+  acercade: AcercaDeM[] = [];
   
-  constructor(public personaService: PersonaService) { }
+  constructor(private sAcercade: AcercaDeService, private tokenService: TokenService) { }
+  isLogged = false;
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
+    this.cargarAcercade();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
-}
+  cargarAcercade(): void{
+    this.sAcercade.lista().subscribe(data => {this.acercade = data;})
+  }
+
+  delete(id?: number){
+    if(id != undefined){
+      this.sAcercade.delete(id).subscribe(
+        data => {
+          this.cargarAcercade();
+        }, err => {
+          alert("No se pudo borrar Acerca de");
+        }
+      )
+    }
+  }
+  }

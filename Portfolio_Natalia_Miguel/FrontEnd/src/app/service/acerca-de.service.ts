@@ -1,31 +1,31 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/internal/Observable';
 import { AcercaDeM } from '../model/acerca-de-m';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AcercaDeService {
-  private URL = 'http://localhost:8080/Acerca_de/';
-  constructor(private http: HttpClient) {}
+  URL = 'http://localhost:8080/acercade/';
 
-  public buscarAcercaDe(id: number): Observable<any> {
-    return this.http.get<any>(this.URL + 'buscar/' + id);
+  constructor(private httpClient : HttpClient) {}
+
+  public lista(): Observable<AcercaDeM[]>{
+    return this.httpClient.get<AcercaDeM[]>(this.URL + 'lista');
   }
 
-  public editAcercaDe(
-    id: number,
-    nombre: String,
-    titulo: String,
-    email: String,
-    img: String,
-    descrip: String
-  ): Observable<AcercaDeM> {
-    return this.http.put<AcercaDeM>(
-      this.URL +
-        `editar/${id}?nombre_apellido=${nombre}&titulo=${titulo}&email=${email}&descripcion=${descrip}&img_perfil=${img}`,
-        AcercaDeM
-    );
+  public detail(id: number): Observable<AcercaDeM>{
+    return this.httpClient.get<AcercaDeM>(this.URL + `detail/${id}`);
   }
-}
+
+  public save(acercade: AcercaDeM): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'create', acercade);
+  }
+  public update(id: number, acercade: AcercaDeM): Observable<any>{
+      return this.httpClient.put<any>(this.URL + `update/${id}`, acercade);
+  }
+  public delete(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+  }
+  }

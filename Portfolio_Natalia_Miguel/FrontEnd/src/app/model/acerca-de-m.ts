@@ -1,21 +1,15 @@
-export class AcercaDeM { id_acerca_de?: number;
-    nombre_apellido: String;
-    titulo: String;
-    email: String;
-    descripcion: String;
-    img_perfil: String;
-  
-    constructor(
-      nombre: String,
-      titulo: String,
-      email: String,
-      descripcion: String,
-      img: String
-    ) {
-      this.nombre_apellido = nombre;
-      this.titulo = titulo;
-      this.email = email;
-      this.descripcion = descripcion;
-      this.img_perfil = img;
-    }
+export class AcercaDeM {
+    id?: number;
+    nombreE: string;
+    descripcionE: string;
+    titulo: string;
+    url_img: string;
+
+
+    constructor(nombreE: string, descripcionE: string, titulo: string, url_img: string){
+        this.nombreE = nombreE;
+        this.descripcionE = descripcionE;
+        this.titulo = titulo;
+        this.url_img = url_img;
   }
+}

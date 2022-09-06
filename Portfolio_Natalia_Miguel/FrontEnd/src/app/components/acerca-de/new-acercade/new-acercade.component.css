@@ -1,0 +1,46 @@
+.contenedor{
+    background-color:rgb(243, 236, 250);
+}
+.group{
+    background-color:rgb(243, 236, 250);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-form{
+    background-color:rgb(243, 236, 250);
+    width: 90%;
+}
+
+.box-img{
+    width: 50%;
+    display: flex;
+    align-items: center
+}
+
+.envase{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.formulario{
+    background-color: rgb(219, 204, 230);
+    width: 70%;
+    height: 50%;
+    padding:30px;
+    filter: drop-shadow(5px 5px 20px rgb(91, 9, 146));
+    border-radius: 2%;
+}
+
+img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 20px rgb(91, 9, 146));
+}

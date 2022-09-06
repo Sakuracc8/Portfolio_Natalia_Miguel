@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-    public interface RAcercade extends JpaRepository<Acercade, Integer>{
+public interface RAcercade extends JpaRepository<Acercade, Integer>{
     public Optional<Acercade> findByNombreE(String nombreE);
     public boolean existsByNombreE(String nombreE);
 }
