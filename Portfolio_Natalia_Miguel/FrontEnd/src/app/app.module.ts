@@ -28,6 +28,8 @@ import { EditAcercadeComponent } from './components/acerca-de/edit-acercade/edit
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos/edit-proyectos.component';
 import { NewAcercadeComponent } from './components/acerca-de/new-acercade/new-acercade.component';
+import { NewSkillsComponent } from './components/skills/new-skills/new-skills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { NewAcercadeComponent } from './components/acerca-de/new-acercade/new-ac
     EditAcercadeComponent,
     NewProyectoComponent,
     EditProyectosComponent,
-    NewAcercadeComponent
+    NewAcercadeComponent,
+    NewSkillsComponent,
+    EditSkillsComponent
   ],
   imports: [
     BrowserModule,

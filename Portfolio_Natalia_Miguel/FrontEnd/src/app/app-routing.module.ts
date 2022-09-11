@@ -10,6 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos/edit-proyectos.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 import { NewAcercadeComponent } from './components/acerca-de/new-acercade/new-acercade.component';
+import { NewSkillsComponent } from './components/skills/new-skills/new-skills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills/edit-skills.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'edit-acercade/:id', component: EditAcercadeComponent},
   {path: 'nuevoproyecto', component: NewProyectoComponent},
   {path: 'editproyectos/:id', component: EditProyectosComponent},
-  {path: 'nuevo-acercade', component: NewAcercadeComponent}
+  {path: 'nuevo-acercade', component: NewAcercadeComponent},
+  {path: 'nueva-habilidad', component: NewSkillsComponent},
+  {path: 'editskills/:id', component: EditSkillsComponent}
 ];
 
 @NgModule({

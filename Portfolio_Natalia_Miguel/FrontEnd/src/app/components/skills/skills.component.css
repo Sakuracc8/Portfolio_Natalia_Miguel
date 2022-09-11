@@ -8,6 +8,14 @@
     margin-right:0;
     background-color:rgb(219, 204, 230);
 }
+
+.tabla{
+    width: 215px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .container{
     position:relative;
     display:flex;
@@ -122,10 +130,12 @@
 
 .number p{
     font-weight: 300;
-    font-size: 0.75em;
+    font-size: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color:rgb(218, 216, 216);
+    color:aqua;
+    width:100px;
+    text-align: center;
 }
 
 
