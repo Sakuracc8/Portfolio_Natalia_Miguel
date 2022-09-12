@@ -30,7 +30,7 @@ También cuenta con un Inicio de Sesion, el cual al iniciarse debe permitirle al
 
 1. Lo primero que veras al entrar a la aplicacion web es un portfolio normal. Con mis datos cargados desde una BBDD externa.
 2. En la barra de navegación se encuentra un boton de Inicio de Sesión, cuando le des click te enviara al login.
-3. Debes registrarte como Adminstrador, y en cada seccion se habilitará unos botones de **editar** y **nuevo**, que al darle click te redirigirá a otra ruta y podras ingresar los nuevos datos en el formulario que se muestre. También habrá un boton rojo para **eliminar** que al darle click se eliminaran esos datos.
+3. Debes registrarte como Adminstrador, y en cada seccion se habilitará unos botones de **nuevo** y **editar**, que al darle click te redirigirá a otra ruta y podras ingresar los nuevos datos en el formulario que se muestre. También habrá un boton rojo para **eliminar** que al darle click se eliminaran esos datos.
 4. Para añadir una imagen debes "Copiar la dirección de enlace" de una imagen de internet, y pegarlo en el campo "URL de la imagen" del formulario que tenga ese campo, es importante que la misma comience con "http://...".
 
 ---
