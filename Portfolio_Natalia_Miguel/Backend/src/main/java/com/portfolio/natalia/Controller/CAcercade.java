@@ -35,7 +35,7 @@ public class CAcercade {
     @GetMapping("/detail/{id}")
     public ResponseEntity<Acercade> getById(@PathVariable("id") int id){
         if(!sAcercade.existsById(id)){
-            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);}
+            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);}
         Acercade acercade = sAcercade.getOne(id).get();
         return new ResponseEntity(acercade, HttpStatus.OK);
     }
@@ -46,24 +46,23 @@ public class CAcercade {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
         if(sAcercade.existsByNombreE(dtoacercade.getNombreE())){
-            return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
-        
+            return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);}
         Acercade acercade = new Acercade(dtoacercade.getNombreE(), dtoacercade.getDescripcionE(), dtoacercade.getTitulo(), dtoacercade.getUrl_img());
         sAcercade.save(acercade);
-        return new ResponseEntity(new Mensaje("Acerca de creado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Acerca de creado"), HttpStatus.OK);       
     }
 
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoAcercade dtoacercade){
         if(!sAcercade.existsById(id)){
-            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
         }
         if(sAcercade.existsByNombreE(dtoacercade.getNombreE()) && sAcercade.getByNombreE(dtoacercade.getNombreE()).get().getId() != id){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
-        if(StringUtils.isBlank(dtoacercade.getNombreE()))
+        if(StringUtils.isBlank(dtoacercade.getNombreE())){
             return new ResponseEntity(new Mensaje("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
+        }
 
         Acercade acercade = sAcercade.getOne(id).get();
 
@@ -78,8 +77,9 @@ public class CAcercade {
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
-        if(!sAcercade.existsById(id))
+        if(!sAcercade.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
+        }
         sAcercade.delete(id);
         return new ResponseEntity(new Mensaje("Acerca de eliminado"), HttpStatus.OK);
     }

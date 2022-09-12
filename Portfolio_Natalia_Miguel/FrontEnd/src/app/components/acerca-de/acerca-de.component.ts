@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AcercaDeM } from 'src/app/model/acerca-de-m';
-import { AcercaDeService } from 'src/app/service/acerca-de.service';
+import { Acercade } from 'src/app/model/acercade';
+import { SAcercadeService } from 'src/app/service/s-acercade.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -9,9 +9,10 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  acercade: AcercaDeM[] = [];
+  acercade: Acercade[] = [];
   
-  constructor(private sAcercade: AcercaDeService, private tokenService: TokenService) { }
+  
+  constructor(private sAcercade: SAcercadeService, private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {
@@ -33,7 +34,7 @@ export class AcercaDeComponent implements OnInit {
         data => {
           this.cargarAcercade();
         }, err => {
-          alert("No se pudo borrar Acerca de");
+          alert("No se pudo borrar el acerca de");
         }
       )
     }
