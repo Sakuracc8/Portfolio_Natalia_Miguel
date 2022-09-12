@@ -10,7 +10,7 @@ Si quieres ver el BackEnd puedes hacer click [Aquí](https://github.com/Sakuracc
 
 ### **Tecnologias Utilizadas:**
 
-- `Portfolio en Figma` Realize un prototipo con [Figma](https://www.figma.com/ "Figma").
+- `Portfolio en Figma` Realize un prototipo con [Figma], si quieres descargarlo puedes hacer click [Aquí](https://github.com/Sakuracc8/Portfolio_Natalia_Miguel/tree/main/Prototipo%20en%20figma%20portfolio%20Natalia%20Miguel)
 
 - `Maqueta` En la maqueta web utilize [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML "HTML"), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS "CSS") (con un framework [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/ "Bootstrap 5")) y [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript").
 
