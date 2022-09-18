@@ -1,46 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .contenedor{
     background-color:rgb(243, 236, 250);
 }
-.group{
-    background-color:rgb(243, 236, 250);
+
+.socialMedia{
     display: flex;
-    width: 100%;
     justify-content: center;
+    min-height: 50vh;
+    filter: drop-shadow(5px 5px 10px rgb(91, 9, 146));
 }
 
-.box-form{
-    background-color:rgb(243, 236, 250);
-    width: 90%;
-}
-
-.box-img{
-    width: 50%;
+.sci{
+    position: relative;
     display: flex;
-    align-items: center
 }
 
-.envase{
+.sci li{
+    list-style: none;
+}
+
+.sci li::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 5%;
+    
+    transform: translate(-20%,calc(-20% + 120px));
+    font-size: 8vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sci li:hover::before{
+    opacity: 0.1;
+    transform: translate(-20%,calc(-20% + 150px));
+
+}
+
+.sci li a{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: #fff;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 150px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    color:#333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style:preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    transition: background 0.8s;
+
 }
 
-button{
-    margin-top: 10px;
+.sci li a:hover.facebook{
+    background: #1877f2;
+
 }
 
-.formulario{
-    background-color: rgb(219, 204, 230);
-    width: 70%;
-    height: 50%;
-    padding:30px;
-    filter: drop-shadow(5px 5px 20px rgb(91, 9, 146));
-    border-radius: 2%;
+.sci li a:hover.twitter{
+    background: #84b8fc;
+
+}
+
+.sci li a:hover.whatsapp{
+    background: #18f28c;
+
+}
+
+.sci li a:hover.linkedin{
+    background: #c618f2;
+
+}
+
+.sci li a .bi{
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sci li a:hover .bi{
+    color:#fff;
 }
 
 img{
-    width: 100%;
-    filter: drop-shadow(5px 5px 20px rgb(91, 9, 146));
+    width: 40%;
+    margin: auto;
+    display: flex;
+    filter: drop-shadow(3px 3px 10px rgb(91, 9, 146));
+    margin-top: 20px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:641px){
+    .sci{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .sci li:hover::before{
+        opacity: 0;
+    }
+
 }
