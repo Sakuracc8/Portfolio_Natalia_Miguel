@@ -4,3 +4,53 @@ div{
     justify-content: space-between;
     align-items:center;
 }
+
+@media screen and (min-width:601px){
+    i{
+        display: none;
+    } 
+  
+}
+
+@media screen and (max-width:600px){
+
+i{
+    color:#fff;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size:xx-large;
+}
+
+div.active{
+    height: 150px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div #botonIS{
+    z-index: -50;
+}
+
+div.active #botonIS{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 2px;
+    z-index: 100;
+}
+
+div #logo{
+    z-index: -50;
+}
+
+div.active #logo{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 2px;
+    z-index: 100;
+}
+
+
+}
+

@@ -1,5 +1,7 @@
-<div>
-    <app-logo-ap></app-logo-ap>
-    <app-menu></app-menu>
-    <app-boton-iniciar-sesion></app-boton-iniciar-sesion>
+<div (click)="toggleClass = !toggleClass" [ngClass]="{ 'active': !toggleClass }">
+    <i class="bi bi-text-left" ></i>
+
+    <app-logo-ap id="logo"></app-logo-ap>
+    <app-menu id="menu"></app-menu>
+    <app-boton-iniciar-sesion id="botonIS"></app-boton-iniciar-sesion>
 </div>
