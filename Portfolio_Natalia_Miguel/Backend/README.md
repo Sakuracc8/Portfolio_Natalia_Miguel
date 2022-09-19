@@ -19,8 +19,9 @@ Si quieres ver el FrontEnd puedes hacer click [Aquí.](https://github.com/Sakura
 ### **Uso:**
 
 La principal idea de esta aplicacion es recibir las peticiones del FrontEnd a través de una API, para luego interactuar con la Base de Datos según las peticiones que reciba. GET para mostrar datos, POST para crear, PUT para modificar y DELETE para eliminar.
-
 Se encuentra instalado swagger ui el cual puede utilizarse desde http://localhost:8080/swagger-ui/index.html
+
+
 ---
 
 ### **Visuales:**
