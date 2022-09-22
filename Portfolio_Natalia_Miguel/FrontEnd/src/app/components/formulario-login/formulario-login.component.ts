@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/model/login-usuario';
+import { NuevoUsuario } from 'src/app/model/nuevo-usuario';
 import { AuthService } from 'src/app/service/auth.service';
 import { TokenService } from 'src/app/service/token.service';
 
@@ -17,6 +18,10 @@ export class FormularioLoginComponent implements OnInit {
   password!: string;
   roles: string[] = [];
   errMsj!: string;
+
+  nombre:string='';
+  email:string='';
+  authorities:string []=[];
 
   constructor(private tokenService: TokenService, private authService: AuthService, private router: Router){ }
 
@@ -44,5 +49,19 @@ export class FormularioLoginComponent implements OnInit {
       this.errMsj = err.error.mensaje;
       console.log(this.errMsj);
     })
+  }
+
+  onCreate():void{
+    var usuario = new NuevoUsuario(this.nombre,this.nombreUsuario,this.email,this.password);
+
+    this.authService.nuevo(usuario).subscribe(
+      data=>{
+      alert("Usuario creado");
+      this.router.navigate(['login']);
+    },err =>{
+      alert("Error en la creacion del usuario");
+      this.router.navigate(['nuevo']);
+    }
+    );
   }
 }
