@@ -20,6 +20,11 @@ div{
     margin-top:-15px; 
 }
 
+p{
+  margin: 15px;
+
+}
+
 /* Botón editar */
 
 .editar{
