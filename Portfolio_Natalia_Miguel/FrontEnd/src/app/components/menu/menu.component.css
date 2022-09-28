@@ -75,6 +75,7 @@ img{
 }
 
 .elementos-navegacion li:hover{
-    background:#786883;
+    background:#564a5e;
     box-shadow:3px 3px;
+    border-radius: 10px;
 }
