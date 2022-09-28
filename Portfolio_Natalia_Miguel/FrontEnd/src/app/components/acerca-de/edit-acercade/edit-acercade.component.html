@@ -8,19 +8,19 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="acercade.nombreE" required>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" placeholder="Ej: Natalia Miguel" [(ngModel)]="acercade.nombreE" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Descripción acerca de tí</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="acercade.descripcionE" required>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" placeholder="Ej: Soy buena en tal y tal cosa. Tengo experiencia en tal otra" [(ngModel)]="acercade.descripcionE" required>
                 </div>
                 <div class="form-group">
                     <label for="titulo">Título que te representa</label>
-                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="acercade.titulo" required>
+                    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ej: Vendedor, Administrativo, Full Stack" [(ngModel)]="acercade.titulo" required>
                 </div>
                 <div class="form-group">
                     <label for="url_img">URL del tu imagen</label>
-                    <input type="text" class="form-control" id="url_img" name="url_img" [(ngModel)]="acercade.url_img" required>
+                    <input type="text" class="form-control" id="url_img" name="url_img" placeholder="Ej: http://foto-tuya.com" [(ngModel)]="acercade.url_img" required>
                 </div>
                 <button class="btn btn-light">Editar acerca de</button>
             </form>
