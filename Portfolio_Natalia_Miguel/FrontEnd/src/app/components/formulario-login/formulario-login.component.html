@@ -4,30 +4,26 @@
 			<div class="login-box">
 				<div class="login-snip">
 					<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
-						class="tab">Login</label>
+						class="tab">Iniciar</label>
 					<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
 					<div class="login-space">
 						<div class="login">
 
 							<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 								<div class="group">
-									<label class="label" for="nombreUsuario">Nombre de Usuario</label>
-									<input type="text" id="nombreUsuario" name="nombreUsuario" class="input"
+									<label class="label" for="nombredeUsuario">Nombre de Usuario</label>
+									<input type="text" id="nombredeUsuario" name="nombredeUsuario" class="input"
 										placeholder="Ingrese su nombre de usuario" [(ngModel)]="nombreUsuario" required>
 								</div>
 
 								<div class="group">
-									<label for="password" class="label">Contraseña</label>
-									<input type="password" id="password" name="password" class="input"
+									<label for="pass" class="label">Contraseña</label>
+									<input type="password" id="pass" name="pass" class="input"
 										placeholder="Ingrese su contraseña" [(ngModel)]="password" required>
 								</div>
 
 								<div class="group">
-									<input type="submit" class="button" value="Sign In">
-								</div>
-								<div class="hr"></div>
-								<div class="foot">
-									<a href="#">Forgot Password?</a>
+									<input type="submit" class="button" value="Iniciar">
 								</div>
 							</form>
 						</div>
@@ -45,7 +41,7 @@
 									<div class="group">
 										<label for="pass" class="label">Nombre de Usuario</label>
 										<input type="text" id="nombreUsuario" name="nombreUsuario" class="input"
-											placeholder="Sakuracc8" [(ngModel)]="nombreUsuario" required>
+											placeholder="Ej: Sakuracc8" [(ngModel)]="nombreUsuario" required>
 									</div>
 
 									<div class="group">
@@ -61,13 +57,13 @@
 									</div>
 
 									<div class="group">
-										<input type="submit" class="button" value="Sign Up">
+										<input type="submit" class="button" value="Registrarse">
 									</div>
 
 									<div class="hr"></div>
 
 									<div class="foot">
-										<label for="tab-1">Already Member?</label>
+										<label for="tab-1">Ya tienes una cuenta?</label>
 									</div>
 								</div>
 							</form>
