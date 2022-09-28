@@ -8,11 +8,11 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre de la habilidad</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" maxlength="30" size="10" [(ngModel)]="habilidades.nombreE" required>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" maxlength="15" size="10" placeholder="Ej: Html, css, java, etc" [(ngModel)]="habilidades.nombreE" required>
                 </div>
                 <div class="form-group">
                     <label for="porcentajeE">Porcentaje de conocimiento</label>
-                    <input type="text" class="form-control" id="porcentajeE" name="porcentajeE" maxlength="210" size="10" [(ngModel)]="habilidades.porcentajeE" required>
+                    <input type="number" class="form-control" id="porcentajeE" name="porcentajeE" maxlength="2" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" id="porcentajeE" name="porcentajeE" placeholder="Ej: 80 (utiliza sólo números del 1 al 99)" [(ngModel)]="habilidades.porcentajeE" required>
                 </div>
                 <button class="btn btn-light">Editar Habilidad</button>
             </form>
