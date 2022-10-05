@@ -7,7 +7,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class SHabilidadesService {
-  URL = 'http://localhost:8080/habilidades/';
+  URL = 'https://backend-natalia.herokuapp.com/habilidades/';
 
   constructor(private httpClient : HttpClient) { }
 
