@@ -20,12 +20,11 @@ Si quieres ver el FrontEnd puedes hacer click [Aquí.](https://github.com/Sakura
 
 La principal idea de esta aplicacion es recibir las peticiones del FrontEnd a través de una API, para luego interactuar con la Base de Datos según las peticiones que reciba. GET para mostrar datos, POST para crear, PUT para modificar y DELETE para eliminar.
 
-Se encuentra instalado swagger ui el cual puede utilizarse desde http://localhost:8080/swagger-ui/index.html
+Dentro del proyecto se encuentra instalado Swagger ui el cual te permitirá probar de forma sensilla y rápida la funcionalidad del backend. Puedes utilizarla haciendo click [Aquí.](https://backend-natalia.herokuapp.com/swagger-ui/index.html "Aquí")
 
 
 ---
 
 ### **Visuales:**
 
-- Puedes ver la aplicación web finalizada [Aquí](URL "Aqui")
-- Puedes visualizar la maqueta web haciendo click [Aquí](URL "Aquí")
+- Puedes ver la aplicación web finalizada [Aquí](https://frontend-natalia.web.app/ "Aqui")
