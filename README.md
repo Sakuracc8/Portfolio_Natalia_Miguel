@@ -37,7 +37,7 @@ También cuenta con un Inicio de Sesion, el cual al iniciarse debe permitirle al
 
 ### **Visuales:**
 
-- Puedes ver la aplicación web finalizada [Aqui](URL "https://frontend-natalia.web.app/")
+- Puedes ver la aplicación web finalizada [Aqui](https://frontend-natalia.web.app/ "Aquí")
 - Puedes visualizar la maqueta web haciendo click [Aquí](URL "Aquí")
 
 ---
