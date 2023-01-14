@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'https://backend-natalia.herokuapp.com/'
+  URL: 'https://backendportfolio-railway.up.railway.app/'
 };
