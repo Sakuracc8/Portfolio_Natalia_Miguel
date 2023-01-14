@@ -7,7 +7,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class SHabilidadesService {
-  URL = 'https://backend-natalia.herokuapp.com/habilidades/';
+  URL = 'https://backendportfolio-railway.up.railway.app/habilidades/';
 
   constructor(private httpClient : HttpClient) { }
 

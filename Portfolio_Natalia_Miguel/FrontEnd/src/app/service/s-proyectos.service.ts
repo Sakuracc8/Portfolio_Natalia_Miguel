@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  URL = 'https://backend-natalia.herokuapp.com/proyectos/';
+  URL = 'https://backendportfolio-railway.up.railway.app/proyectos/';
 
   constructor(private httpClient : HttpClient) { }
 

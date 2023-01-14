@@ -7,7 +7,7 @@ import { Acercade } from '../model/acercade';
   providedIn: 'root'
 })
 export class SAcercadeService {
-  URL = 'https://backend-natalia.herokuapp.com/acercade/';
+  URL = 'https://backendportfolio-railway.up.railway.app/acercade/';
 
   constructor(private httpClient : HttpClient) { }
 
