@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'backendportfolio-railway.up.railway.app'
+  URL: 'https://backendnm.onrender.com'
 };

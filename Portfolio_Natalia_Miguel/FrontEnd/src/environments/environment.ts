@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  URL: 'https://backendportfolio-railway.up.railway.app/'
+  URL: 'https://backendnm.onrender.com'
 };
 
 /*

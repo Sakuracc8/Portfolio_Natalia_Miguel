@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  URL = 'https://backendportfolio-railway.up.railway.app/proyectos/';
+  URL = 'https://backendnm.onrender.com/proyectos/';
 
   constructor(private httpClient : HttpClient) { }
 

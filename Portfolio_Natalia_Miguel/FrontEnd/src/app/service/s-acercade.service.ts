@@ -7,7 +7,7 @@ import { Acercade } from '../model/acercade';
   providedIn: 'root'
 })
 export class SAcercadeService {
-  URL = 'https://backendportfolio-railway.up.railway.app/acercade/';
+  URL = 'https://backendnm.onrender.com/acercade/';
 
   constructor(private httpClient : HttpClient) { }
 

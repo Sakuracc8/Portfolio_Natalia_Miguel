@@ -7,7 +7,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class SHabilidadesService {
-  URL = 'https://backendportfolio-railway.up.railway.app/habilidades/';
+  URL = 'https://backendnm.onrender.com/habilidades/';
 
   constructor(private httpClient : HttpClient) { }
 
