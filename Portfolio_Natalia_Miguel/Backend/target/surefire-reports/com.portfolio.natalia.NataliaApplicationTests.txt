@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.portfolio.natalia.NataliaApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.466 s - in com.portfolio.natalia.NataliaApplicationTests
